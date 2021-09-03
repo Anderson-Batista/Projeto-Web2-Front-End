@@ -32,4 +32,8 @@ export class FornadaCreateComponent implements OnInit {
     })
   }
 
+  cancel(): void{
+    this.router.navigate(['fornadas']);
+  }
+
 }
