@@ -16,6 +16,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './components/views/home/home.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button';
 import { FornadaReadComponent } from './components/views/fornada/fornada-read/fornada-read.component';
 
 
@@ -38,7 +39,8 @@ import { FornadaReadComponent } from './components/views/fornada/fornada-read/fo
     MatIconModule,
     MatCardModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

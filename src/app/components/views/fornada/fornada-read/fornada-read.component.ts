@@ -11,7 +11,7 @@ export class FornadaReadComponent implements OnInit {
 
   fornadas: Fornada[] = [];
 
-  displayedColumns: string[] = ['id', 'nomePao', 'descricao', 'status', 'acoes'];
+  displayedColumns: string[] = ['id', 'nomePao', 'descricao', 'status', 'paes', 'acoes'];
 
   constructor(private service: FornadaService) { }
 
