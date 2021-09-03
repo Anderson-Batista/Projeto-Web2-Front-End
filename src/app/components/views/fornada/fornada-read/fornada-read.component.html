@@ -3,7 +3,7 @@
         <h1>Fornadas</h1>
     </div>
 
-    <button class="mat-elevation-z8" mat-stroked-button color="primary">NOVA FORNADA</button>
+    <button class="mat-elevation-z8"(click)="navegarParaFornadaCreate()" mat-stroked-button color="primary">NOVA FORNADA</button>
 
     <div class="mat-elevation-z8 content-table">
         <table class="table" mat-table [dataSource]="fornadas">

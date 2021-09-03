@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Fornada } from '../fornada.model';
 import { FornadaService } from '../fornada.service';
 
@@ -13,7 +14,7 @@ export class FornadaReadComponent implements OnInit {
 
   displayedColumns: string[] = ['id', 'nomePao', 'descricao', 'status', 'paes', 'acoes'];
 
-  constructor(private service: FornadaService) { }
+  constructor(private service: FornadaService, private router: Router) { }
 
   ngOnInit(): void {
     this.findAll();
@@ -24,6 +25,10 @@ export class FornadaReadComponent implements OnInit {
       console.log(resposta);
       this.fornadas = resposta;
     })
+  }
+
+  navegarParaFornadaCreate(){
+    this.router.navigate(["fornadas/create"]);
   }
   
 }
