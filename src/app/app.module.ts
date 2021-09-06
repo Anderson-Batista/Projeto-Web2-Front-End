@@ -24,6 +24,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FornadaDeleteComponent } from './components/views/fornada/fornada-delete/fornada-delete.component';
+import { FornadaUpdateComponent } from './components/views/fornada/fornada-update/fornada-update.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { FornadaDeleteComponent } from './components/views/fornada/fornada-delet
     HomeComponent,
     FornadaReadComponent,
     FornadaCreateComponent,
-    FornadaDeleteComponent
+    FornadaDeleteComponent,
+    FornadaUpdateComponent
   ],
   imports: [
     BrowserModule,

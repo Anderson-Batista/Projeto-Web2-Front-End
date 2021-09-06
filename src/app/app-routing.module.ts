@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FornadaCreateComponent } from './components/views/fornada/fornada-create/fornada-create.component';
 import { FornadaDeleteComponent } from './components/views/fornada/fornada-delete/fornada-delete.component';
 import { FornadaReadComponent } from './components/views/fornada/fornada-read/fornada-read.component';
+import { FornadaUpdateComponent } from './components/views/fornada/fornada-update/fornada-update.component';
 import { HomeComponent } from './components/views/home/home.component';
 
 const routes: Routes = [
@@ -21,6 +22,10 @@ const routes: Routes = [
 {
   path: 'fornadas/delete/:id',
   component: FornadaDeleteComponent
+},
+{
+  path: 'fornadas/update/:id',
+  component: FornadaUpdateComponent
 }
 
 ];

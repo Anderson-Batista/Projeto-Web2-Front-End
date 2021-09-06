@@ -34,6 +34,11 @@ export class FornadaService {
     return this.http.delete<void>(url)
   }
 
+  update(fornada: Fornada): Observable<void> {
+    const url = `${this.baseUrl}/fornadas/${fornada.id}`
+    return this.http.put<void>(url, fornada)
+  }
+
   mensagem(str: String): void {
     this._snack.open(`${str}`, 'OK', {
       horizontalPosition: 'end',
