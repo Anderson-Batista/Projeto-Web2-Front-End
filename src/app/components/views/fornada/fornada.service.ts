@@ -19,9 +19,19 @@ export class FornadaService {
     return this.http.get<Fornada[]>(url)
   }
 
+  findById(id: String): Observable<Fornada>{
+    const url = `${this.baseUrl}/fornadas/${id}`
+    return this.http.get<Fornada>(url)
+  }
+
   create(fornada: Fornada): Observable<Fornada>{
     const url = `${this.baseUrl}/fornadas`
     return this.http.post<Fornada>(url, fornada);
+  }
+
+  delete(id: String): Observable<void> {
+    const url = `${this.baseUrl}/fornadas/${id}`
+    return this.http.delete<void>(url)
   }
 
   mensagem(str: String): void {

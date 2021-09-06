@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FornadaCreateComponent } from './components/views/fornada/fornada-create/fornada-create.component';
+import { FornadaDeleteComponent } from './components/views/fornada/fornada-delete/fornada-delete.component';
 import { FornadaReadComponent } from './components/views/fornada/fornada-read/fornada-read.component';
 import { HomeComponent } from './components/views/home/home.component';
 
@@ -16,6 +17,10 @@ const routes: Routes = [
 {
   path: 'fornadas/create',
   component: FornadaCreateComponent
+},
+{
+  path: 'fornadas/delete/:id',
+  component: FornadaDeleteComponent
 }
 
 ];
