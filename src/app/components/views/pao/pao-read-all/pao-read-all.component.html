@@ -1,37 +1,32 @@
 <div class="content">
     <div class="title">
-        <h1>Fornadas</h1>
+        <h1>Pães</h1>
     </div>
 
-    <button class="mat-elevation-z8"(click)="navegarParaFornadaCreate()" mat-stroked-button color="primary">NOVA FORNADA</button>
+    <button class="mat-elevation-z8" mat-stroked-button color="primary">NOVO PÃO</button>
 
     <div class="mat-elevation-z8 content-table">
-        <table class="table" mat-table [dataSource]="fornadas">
+        <table class="table" mat-table [dataSource]="paes">
                 
           <ng-container matColumnDef="id">
             <th mat-header-cell *matHeaderCellDef> ID </th>
             <td mat-cell *matCellDef="let element"> {{element.id}} </td>
           </ng-container>
                  
-          <ng-container matColumnDef="nomePao">
+          <ng-container matColumnDef="nome">
             <th mat-header-cell *matHeaderCellDef> NOME DO PAO </th>
-            <td mat-cell *matCellDef="let element"> {{element.nomePao}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
           </ng-container>
                   
-          <ng-container matColumnDef="descricao">
-            <th mat-header-cell *matHeaderCellDef> DESCRIÇÃO </th>
-            <td mat-cell *matCellDef="let element"> {{element.descricao}} </td>
-          </ng-container>
-                  
-          <ng-container matColumnDef="status">
-            <th mat-header-cell *matHeaderCellDef> STATUS </th>
-            <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+          <ng-container matColumnDef="tempoPreparo">
+            <th mat-header-cell *matHeaderCellDef> TEMPO DE PREPARO </th>
+            <td mat-cell *matCellDef="let element"> {{element.tempoPreparo}} </td>
           </ng-container>
 
           <ng-container matColumnDef="paes">
-            <th mat-header-cell *matHeaderCellDef> PÃES </th>
+            <th mat-header-cell *matHeaderCellDef> VER PÃO </th>
             <td mat-cell *matCellDef="let element"> 
-              <a class="paes" routerLink="{{ element.id }}/paes">
+              <a class="paes">
                 <i class="material-icons">bakery_dining</i>
               </a>
             </td>
@@ -40,10 +35,10 @@
            <ng-container matColumnDef="acoes">
             <th class="mat-header" mat-header-cell *matHeaderCellDef> AÇÕES </th>
             <td mat-cell *matCellDef="let element">
-              <a class="edit" routerLink="update/{{ element.id }}">
+              <a class="edit" href="#">
                 <i class="material-icons">edit</i>
               </a>
-              <a class="delete" routerLink="delete/{{ element.id }}">
+              <a class="delete" href="#">
                 <i class="material-icons">delete</i>
               </a>
             </td>
@@ -54,3 +49,4 @@
         </table>
     </div>      
 </div>
+

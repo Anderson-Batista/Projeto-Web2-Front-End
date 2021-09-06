@@ -25,6 +25,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FornadaDeleteComponent } from './components/views/fornada/fornada-delete/fornada-delete.component';
 import { FornadaUpdateComponent } from './components/views/fornada/fornada-update/fornada-update.component';
+import { PaoReadAllComponent } from './components/views/pao/pao-read-all/pao-read-all.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { FornadaUpdateComponent } from './components/views/fornada/fornada-updat
     FornadaReadComponent,
     FornadaCreateComponent,
     FornadaDeleteComponent,
-    FornadaUpdateComponent
+    FornadaUpdateComponent,
+    PaoReadAllComponent
   ],
   imports: [
     BrowserModule,

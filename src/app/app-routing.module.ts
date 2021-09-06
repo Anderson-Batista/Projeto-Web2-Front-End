@@ -5,6 +5,7 @@ import { FornadaDeleteComponent } from './components/views/fornada/fornada-delet
 import { FornadaReadComponent } from './components/views/fornada/fornada-read/fornada-read.component';
 import { FornadaUpdateComponent } from './components/views/fornada/fornada-update/fornada-update.component';
 import { HomeComponent } from './components/views/home/home.component';
+import { PaoReadAllComponent } from './components/views/pao/pao-read-all/pao-read-all.component';
 
 const routes: Routes = [
 {
@@ -26,6 +27,10 @@ const routes: Routes = [
 {
   path: 'fornadas/update/:id',
   component: FornadaUpdateComponent
+},
+{
+  path: 'fornadas/:id_for/paes',
+  component: PaoReadAllComponent
 }
 
 ];
