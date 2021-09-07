@@ -28,6 +28,7 @@ import { FornadaUpdateComponent } from './components/views/fornada/fornada-updat
 import { PaoReadAllComponent } from './components/views/pao/pao-read-all/pao-read-all.component';
 import { PaoCreateComponent } from './components/views/pao/pao-create/pao-create.component';
 import { PaoUpdateComponent } from './components/views/pao/pao-update/pao-update.component';
+import { PaoDeleteComponent } from './components/views/pao/pao-delete/pao-delete.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { PaoUpdateComponent } from './components/views/pao/pao-update/pao-update
     FornadaUpdateComponent,
     PaoReadAllComponent,
     PaoCreateComponent,
-    PaoUpdateComponent
+    PaoUpdateComponent,
+    PaoDeleteComponent
   ],
   imports: [
     BrowserModule,

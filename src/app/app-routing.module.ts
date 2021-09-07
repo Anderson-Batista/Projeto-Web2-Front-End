@@ -6,6 +6,7 @@ import { FornadaReadComponent } from './components/views/fornada/fornada-read/fo
 import { FornadaUpdateComponent } from './components/views/fornada/fornada-update/fornada-update.component';
 import { HomeComponent } from './components/views/home/home.component';
 import { PaoCreateComponent } from './components/views/pao/pao-create/pao-create.component';
+import { PaoDeleteComponent } from './components/views/pao/pao-delete/pao-delete.component';
 import { PaoReadAllComponent } from './components/views/pao/pao-read-all/pao-read-all.component';
 import { PaoUpdateComponent } from './components/views/pao/pao-update/pao-update.component';
 
@@ -41,6 +42,10 @@ const routes: Routes = [
 {
   path: 'fornadas/:id_for/paes/:id/update',
   component: PaoUpdateComponent
+},
+{
+  path: 'fornadas/:id_for/paes/:id/delete',
+  component: PaoDeleteComponent
 }
 
 ];

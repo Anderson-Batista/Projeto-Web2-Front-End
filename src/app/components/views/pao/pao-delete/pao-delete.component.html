@@ -1,0 +1,21 @@
+<form action="">
+    <h1>DELETANDO PÃO</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="pao.nome" type="text" name="nome" disabled>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>TEMPO PREPARO</mat-label>
+        <input matInput [(ngModel)]="pao.tempoPreparo"  type="text" name="tempoPreparo" disabled>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="delete()" class="mat-elevation-z8" mat-stroked-button color="primary">APAGAR</button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn">CANCELAR</button>
+    </div>
+</form>
+
+
+
