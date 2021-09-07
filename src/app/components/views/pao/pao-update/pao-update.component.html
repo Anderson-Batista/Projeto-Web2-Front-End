@@ -1,0 +1,22 @@
+<form action="">
+    <h1>ATUALIZANDO PÃO</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="pao.nome" [formControl]="nome" required type="text" name="nome" placeholder="EX. Pao Frances" maxlength="100">
+        <mat-error *ngIf="nome.invalid">{{ getMessage() }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>TEMPO PREPARO</mat-label>
+        <input matInput [(ngModel)]="pao.tempoPreparo" [formControl]="tempoPreparo" required type="text" name="tempoPreparo" placeholder="EX. Pao Frances" maxlength="100">
+        <mat-error *ngIf="tempoPreparo.invalid">{{ getMessage() }}</mat-error>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="update()" [disabled]="getMessage()" class="mat-elevation-z8" mat-stroked-button color="primary">ATUALIZAR</button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn">CANCELAR</button>
+    </div>
+</form>
+
+

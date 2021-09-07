@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Pao } from '../pao.model';
 import { PaoService } from '../pao.service';
 
@@ -16,7 +16,7 @@ export class PaoReadAllComponent implements OnInit {
 
   paes: Pao[] = []
 
-  constructor(private service: PaoService, private route: ActivatedRoute) { }
+  constructor(private service: PaoService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.id_for = this.route.snapshot.paramMap.get('id_for')!
@@ -27,6 +27,10 @@ export class PaoReadAllComponent implements OnInit {
     this.service.findAllByFornada(this.id_for).subscribe((resposta) => {
       this.paes = resposta
     });
+  }
+
+  navegarParaCriarPao(): void{
+    this.router.navigate([`fornadas/${this.id_for}/paes/create`])
   }
 
 }

@@ -19,13 +19,15 @@ import { MatTableModule } from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
 import { FornadaReadComponent } from './components/views/fornada/fornada-read/fornada-read.component';
 import { FornadaCreateComponent } from './components/views/fornada/fornada-create/fornada-create.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FornadaDeleteComponent } from './components/views/fornada/fornada-delete/fornada-delete.component';
 import { FornadaUpdateComponent } from './components/views/fornada/fornada-update/fornada-update.component';
 import { PaoReadAllComponent } from './components/views/pao/pao-read-all/pao-read-all.component';
+import { PaoCreateComponent } from './components/views/pao/pao-create/pao-create.component';
+import { PaoUpdateComponent } from './components/views/pao/pao-update/pao-update.component';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { PaoReadAllComponent } from './components/views/pao/pao-read-all/pao-rea
     FornadaCreateComponent,
     FornadaDeleteComponent,
     FornadaUpdateComponent,
-    PaoReadAllComponent
+    PaoReadAllComponent,
+    PaoCreateComponent,
+    PaoUpdateComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +60,8 @@ import { PaoReadAllComponent } from './components/views/pao/pao-read-all/pao-rea
     FormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

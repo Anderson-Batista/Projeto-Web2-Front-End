@@ -3,7 +3,7 @@
         <h1>Pães</h1>
     </div>
 
-    <button class="mat-elevation-z8" mat-stroked-button color="primary">NOVO PÃO</button>
+    <button class="mat-elevation-z8" (click)="navegarParaCriarPao()" mat-stroked-button color="primary">NOVO PÃO</button>
 
     <div class="mat-elevation-z8 content-table">
         <table class="table" mat-table [dataSource]="paes">
@@ -35,7 +35,7 @@
            <ng-container matColumnDef="acoes">
             <th class="mat-header" mat-header-cell *matHeaderCellDef> AÇÕES </th>
             <td mat-cell *matCellDef="let element">
-              <a class="edit" href="#">
+              <a class="edit" routerLink="{{ element.id }}/update">
                 <i class="material-icons">edit</i>
               </a>
               <a class="delete" href="#">
