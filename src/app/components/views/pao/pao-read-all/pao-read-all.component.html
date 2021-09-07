@@ -26,7 +26,7 @@
           <ng-container matColumnDef="paes">
             <th mat-header-cell *matHeaderCellDef> VER PÃO </th>
             <td mat-cell *matCellDef="let element"> 
-              <a class="paes">
+              <a class="paes" routerLink="{{ element.id }}/read">
                 <i class="material-icons">bakery_dining</i>
               </a>
             </td>

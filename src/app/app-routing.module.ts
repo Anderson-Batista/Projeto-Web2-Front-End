@@ -8,6 +8,7 @@ import { HomeComponent } from './components/views/home/home.component';
 import { PaoCreateComponent } from './components/views/pao/pao-create/pao-create.component';
 import { PaoDeleteComponent } from './components/views/pao/pao-delete/pao-delete.component';
 import { PaoReadAllComponent } from './components/views/pao/pao-read-all/pao-read-all.component';
+import { PaoReadComponent } from './components/views/pao/pao-read/pao-read.component';
 import { PaoUpdateComponent } from './components/views/pao/pao-update/pao-update.component';
 
 const routes: Routes = [
@@ -46,6 +47,11 @@ const routes: Routes = [
 {
   path: 'fornadas/:id_for/paes/:id/delete',
   component: PaoDeleteComponent
+}
+,
+{
+  path: 'fornadas/:id_for/paes/:id/read',
+  component: PaoReadComponent
 }
 
 ];

@@ -29,6 +29,7 @@ import { PaoReadAllComponent } from './components/views/pao/pao-read-all/pao-rea
 import { PaoCreateComponent } from './components/views/pao/pao-create/pao-create.component';
 import { PaoUpdateComponent } from './components/views/pao/pao-update/pao-update.component';
 import { PaoDeleteComponent } from './components/views/pao/pao-delete/pao-delete.component';
+import { PaoReadComponent } from './components/views/pao/pao-read/pao-read.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { PaoDeleteComponent } from './components/views/pao/pao-delete/pao-delete
     PaoReadAllComponent,
     PaoCreateComponent,
     PaoUpdateComponent,
-    PaoDeleteComponent
+    PaoDeleteComponent,
+    PaoReadComponent
   ],
   imports: [
     BrowserModule,
